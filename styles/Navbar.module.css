@@ -1,0 +1,30 @@
+.navbar {
+  background-color: black;
+  color: whitesmoke;
+  height: 50px;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li h3 {
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.link {
+  all: unset;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: yellowgreen;
+}

@@ -1,0 +1,12 @@
+.movie__card {
+  background-color: blue;
+  color: aliceblue;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 300px;
+}
+
+.movie__card h2 {
+  text-align: center;
+  font-size: 15px;
+}
