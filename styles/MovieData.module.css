@@ -1,0 +1,84 @@
+.movieData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__movie {
+  background-color: beige;
+  display: flex;
+  padding: 1rem;
+  width: 80%;
+  gap: 1.5rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.main__movie__info p {
+  margin-top: 10rem;
+}
+
+/* Recommendation CSS*/
+
+.recommendation__grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.recommendation__grid__movies {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommendation__item {
+  text-align: center;
+  width: 300px;
+  padding: 1rem;
+}
+
+.recommendation__item img {
+  width: 100%;
+  height: 80%;
+}
+
+.recommendation__item:hover {
+  cursor: pointer;
+}
+/* Cast CSS*/
+
+.cast__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cast__grid h1,
+.recommendation__grid h1 {
+  margin-bottom: 2rem;
+}
+
+.cast__grid h5 {
+  font-size: 1.5rem;
+}
+
+.cast__grid__chars {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cast__char {
+  width: 300px;
+  text-align: center;
+}
+
+.cast__char img {
+  border-radius: 50%;
+}
+
+.link {
+  all: unset;
+}
