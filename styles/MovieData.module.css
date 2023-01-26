@@ -4,13 +4,14 @@
   align-items: center;
 }
 .main__movie {
-  background-color: beige;
+  background-color: whitesmoke;
   display: flex;
   padding: 1rem;
   width: 80%;
   gap: 1.5rem;
   border-radius: 15px;
   margin: 2rem 0;
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.58);
 }
 
 .main__movie__info p {
@@ -36,6 +37,8 @@
   text-align: center;
   width: 300px;
   padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.58);
 }
 
 .recommendation__item img {
@@ -45,6 +48,7 @@
 
 .recommendation__item:hover {
   cursor: pointer;
+  background-color: wheat;
 }
 /* Cast CSS*/
 
@@ -73,6 +77,7 @@
 .cast__char {
   width: 300px;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .cast__char img {
@@ -81,4 +86,17 @@
 
 .link {
   all: unset;
+}
+
+@media screen and (max-width: 850px) {
+  .main__movie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main__movie__info p {
+    margin-top: 2rem;
+  }
 }

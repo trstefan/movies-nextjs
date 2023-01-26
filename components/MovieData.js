@@ -32,6 +32,7 @@ const MovieData = ({ movieData, recommendationData, castData }) => {
               <Link
                 href={`/movies/${recommendation.id}`}
                 className={styles.link}
+                key={recommendation.id}
               >
                 <div className={styles.recommendation__item}>
                   <img
@@ -53,7 +54,7 @@ const MovieData = ({ movieData, recommendationData, castData }) => {
         <div className={styles.cast__grid__chars}>
           {castData &&
             castData.map((cast) => (
-              <div className={styles.cast__char}>
+              <div className={styles.cast__char} key={cast.id}>
                 <img
                   src={
                     cast?.profile_path

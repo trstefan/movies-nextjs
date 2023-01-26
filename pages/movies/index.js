@@ -1,5 +1,6 @@
 import axios from "axios";
 import MoviesGrid from "@/components/MoviesGrid";
+import styles from "../../styles/Layout.module.css";
 
 const movies = ({ popularMovies }) => {
   if (!popularMovies) {
@@ -10,7 +11,7 @@ const movies = ({ popularMovies }) => {
 
   return (
     <>
-      <h1>Popular Movies</h1>
+      <h1 className={styles.title}>Popular Movies</h1>
       <MoviesGrid movies={results}></MoviesGrid>
     </>
   );
@@ -23,6 +24,7 @@ export const getServerSideProps = async () => {
   return {
     props: {
       popularMovies,
+      title: "Home",
     },
   };
 };

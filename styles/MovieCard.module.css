@@ -10,6 +10,7 @@
 
 .movie__card:hover {
   cursor: pointer;
+  background-color: wheat;
 }
 
 .movie__card img {
@@ -17,17 +18,8 @@
   height: 80%;
 }
 
-/*
-.movie__rating {
-  background-color: aqua;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-*/
-
 .movie__card h2 {
+  margin-top: 0.75rem;
   text-align: center;
   font-size: 15px;
 }

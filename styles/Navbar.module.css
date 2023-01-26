@@ -28,3 +28,17 @@
   cursor: pointer;
   color: yellowgreen;
 }
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    height: 100px;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+}

@@ -33,6 +33,7 @@ export const getServerSideProps = async (context) => {
       movieData,
       recommendationData,
       castData,
+      title: movieData.original_title,
     },
   };
 };

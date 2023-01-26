@@ -1,5 +1,6 @@
 import axios from "axios";
 import MoviesGrid from "@/components/MoviesGrid";
+import styles from "../../styles/Layout.module.css";
 
 const upcoming = ({ upcomingMovies }) => {
   if (!upcomingMovies) {
@@ -10,7 +11,7 @@ const upcoming = ({ upcomingMovies }) => {
 
   return (
     <>
-      <h1>Upcoming Movies</h1>
+      <h1 className={styles.title}>Upcoming Movies</h1>
       <MoviesGrid movies={results}></MoviesGrid>
     </>
   );
@@ -23,6 +24,7 @@ export const getServerSideProps = async () => {
   return {
     props: {
       upcomingMovies,
+      title: "Upcoming Movies",
     },
   };
 };
