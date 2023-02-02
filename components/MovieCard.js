@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/MovieCard.module.css";
 import { IMG_URL, NO_MOVIE_URL } from "@/consts";
 import Link from "next/link";
+import { useRef } from "react";
 
 const MovieCard = ({ movie }) => {
   return (
