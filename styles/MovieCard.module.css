@@ -1,27 +1,23 @@
 .movie__card {
-  background-color: whitesmoke;
-  color: black;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.58);
-}
-
-.movie__card:hover {
   cursor: pointer;
-  background-color: wheat;
+  margin-bottom: 1rem;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
 }
 
 .movie__card img {
-  width: 100%;
-  height: 80%;
+  border-radius: 10%;
 }
-
 .movie__card h2 {
   margin-top: 0.75rem;
-  text-align: center;
   font-size: 15px;
+}
+
+.card__details {
+  color: #ffffff;
 }
 
 .link {

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/MovieCard.module.css";
 import { IMG_URL, NO_MOVIE_URL } from "@/consts";
 import Link from "next/link";
-import { useRef } from "react";
 
 const MovieCard = ({ movie }) => {
   return (
@@ -16,9 +15,12 @@ const MovieCard = ({ movie }) => {
           }
           alt={movie.original_title}
           width={300}
-          height={300}
+          height={250}
+          objectFit="cover"
         />
-        <h2>{movie.original_title}</h2>
+        <div className={styles.card__details}>
+          <h2>{movie.original_title}</h2>
+        </div>
       </div>
     </Link>
   );
