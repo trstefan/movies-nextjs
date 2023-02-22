@@ -11,7 +11,7 @@ const movies = ({ popularMovies }) => {
 
   return (
     <>
-      <h1 className={styles.title}>Popular Movies</h1>
+      <h1 className={styles.title}>Home</h1>
       <MoviesGrid movies={results}></MoviesGrid>
     </>
   );

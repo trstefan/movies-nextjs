@@ -1,6 +1,6 @@
 import axios from "axios";
 import MoviesGrid from "@/components/MoviesGrid";
-import styles from "../../styles/Layout.module.css";
+import styles from "@/styles/Layout.module.css";
 
 const playing = ({ playingMovies }) => {
   if (!playingMovies) {

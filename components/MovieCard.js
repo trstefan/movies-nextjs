@@ -16,7 +16,6 @@ const MovieCard = ({ movie }) => {
           alt={movie.original_title}
           width={300}
           height={250}
-          objectFit="cover"
         />
         <div className={styles.card__details}>
           <h2>{movie.original_title}</h2>

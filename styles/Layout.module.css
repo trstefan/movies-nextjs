@@ -7,4 +7,16 @@
 .title {
   padding-top: 2rem;
   margin: 0 2rem 1.5rem 2rem;
+  color: wheat;
+}
+
+.link__card {
+  all: unset;
+}
+
+.grid__genres__cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }

@@ -24,8 +24,8 @@ const Navbar = () => {
         <Link href="/movies/top" className={styles.link}>
           <li>Top Rated</li>
         </Link>
-        <Link href="/movies/upcoming" className={styles.link}>
-          <li>Upcoming</li>
+        <Link href="/movies/genres" className={styles.link}>
+          <li>Genres</li>
         </Link>
       </ul>
     </div>
